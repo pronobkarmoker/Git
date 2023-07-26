@@ -81,8 +81,57 @@ Writing objects: 100% (3/3), 291 bytes | 291.00 KiB/s, done.
 Total 3 (delta 0), reused 0 (delta 0)
 To https://github.com/pronobkarmoker/Git.git
  * [new branch]      master -> master
+ 
+ iit@iit-H61MLV:~/Git$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	git
+
+nothing added to commit but untracked files present (use "git add" to track)
+iit@iit-H61MLV:~/Git$ git add --all
+iit@iit-H61MLV:~/Git$ git commit -m "IIT "
+[master 28aa777] IIT
+ 1 file changed, 92 insertions(+)
+ create mode 100644 git
+iit@iit-H61MLV:~/Git$ git push
+Username for 'https://github.com': pronobkarmoker
+Password for 'https://pronobkarmoker@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/pronobkarmoker/Git.git/'
+iit@iit-H61MLV:~/Git$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+iit@iit-H61MLV:~/Git$ git add --all
+iit@iit-H61MLV:~/Git$ git commit -m "initial commit "
+[master 9619026] initial commit
+ 1 file changed, 1 insertion(+)
+iit@iit-H61MLV:~/Git$ git config credential helper store
+error: key does not contain a section: credential
+iit@iit-H61MLV:~/Git$ git config credential.helper store
+iit@iit-H61MLV:~/Git$ git push
+Username for 'https://github.com': pronobkarmoker
+Password for 'https://pronobkarmoker@github.com': 
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 1.65 KiB | 1.65 MiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/pronobkarmoker/Git.git
+   5c43572..9619026  master -> master
 
 
+
+
+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
 
 
 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     (TOKEN)
