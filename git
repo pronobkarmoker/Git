@@ -1,0 +1,92 @@
+ctrl alt t = tewrminal
+
+sudo apt install git
+
+
+iit@iit-H61MLV:~$ sudo apt install git
+[sudo] password for iit: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+git is already the newest version (1:2.25.1-1ubuntu3.11).
+git set to manually installed.
+The following packages were automatically installed and are no longer required:
+  gir1.2-goa-1.0 libfwupdplugin1 libxmlb1
+Use 'sudo apt autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+
+iit@iit-H61MLV:~$ git clone https://github.com/pronobkarmoker/Git.git
+Cloning into 'Git'...
+warning: You appear to have cloned an empty repository.
+iit@iit-H61MLV:~$ ls
+ a.out     Documents  'first .c'   Git     Pictures   snap        test.c
+ Desktop   Downloads   first.c     Music   Public     Templates   Videos
+ 
+
+iit@iit-H61MLV:~$ cd Git
+
+iit@iit-H61MLV:~/Git$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	shuvo.c
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+iit@iit-H61MLV:~/Git$ git add --all
+
+iit@iit-H61MLV:~/Git$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   shuvo.c
+
+
+iit@iit-H61MLV:~/Git$ git commit -m "IIT rocks"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'iit@iit-H61MLV.(none)')
+
+iit@iit-H61MLV:~/Git$ git config --global user.email bsse1431@iit.du.ac.bd
+iit@iit-H61MLV:~/Git$ git config --global user.name pronobkarmoker
+
+iit@iit-H61MLV:~/Git$ git commit -m "IIT rocks"
+[master (root-commit) 5c43572] IIT rocks
+ 1 file changed, 6 insertions(+)
+ create mode 100644 shuvo.c
+
+iit@iit-H61MLV:~/Git$ git push
+Username for 'https://github.com': pronobkarmoker
+Password for 'https://pronobkarmoker@github.com': 
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 291 bytes | 291.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/pronobkarmoker/Git.git
+ * [new branch]      master -> master
+
+
+
+
+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     (TOKEN)
+
+
+
+
